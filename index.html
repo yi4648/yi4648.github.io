@@ -64,6 +64,102 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-本地电脑在GitHub上部署 博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/18/%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E5%9C%A8GitHub%E4%B8%8A%E9%83%A8%E7%BD%B2%20%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2020-07-18T03:17:55.163Z" itemprop="datePublished">2020-07-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/18/%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E5%9C%A8GitHub%E4%B8%8A%E9%83%A8%E7%BD%B2%20%E5%8D%9A%E5%AE%A2/">本地电脑在GitHub上部署 博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="本地电脑在GitHub上部署-博客"><a href="#本地电脑在GitHub上部署-博客" class="headerlink" title="本地电脑在GitHub上部署 博客"></a>本地电脑在GitHub上部署 博客</h1><p>安装环境：windows  </p>
+<p>要求：基本熟悉命令行操作</p>
+<h2 id="注册GitHub-并创建仓库"><a href="#注册GitHub-并创建仓库" class="headerlink" title="注册GitHub 并创建仓库"></a>注册GitHub 并创建仓库</h2><p>注册github</p>
+<p>官方地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-1/github1.jpeg" alt="img"></p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-1/github2.jpeg" alt="img"></p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-1-3/%E7%99%BB%E5%BD%95%E5%85%A5%E5%8F%A3.png" alt="登录入口.png"></p>
+<p>创建Github仓库</p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-1-3/%E5%88%9B%E5%BB%BA%E5%85%A5%E5%8F%A3.jpeg" alt="创建入口.jpeg"></p>
+<p><strong>注意：仓库名格式必须只能这样写 你的用户名+github.io 比如我github名字是yi4648 那我的仓库名就是 yi4648.github.io</strong>。</p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-1-3/%E5%88%9B%E5%BB%BA2.png" alt="img"></p>
+<h2 id="本地安装git"><a href="#本地安装git" class="headerlink" title="本地安装git"></a>本地安装git</h2><p>官方下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a>。</p>
+<p>百度云地址 ：链接：<a href="https://pan.baidu.com/s/1N3El5YuUhCpb7b4D6h_h_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1N3El5YuUhCpb7b4D6h_h_g</a><br>提取码：3bf7</p>
+<p>下载后打开exe文件，一直按<code>next</code>即可。</p>
+<p>检验：本地环境打开终端，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<h2 id="本地配置SSH绑定至GitHub"><a href="#本地配置SSH绑定至GitHub" class="headerlink" title="本地配置SSH绑定至GitHub"></a>本地配置SSH绑定至GitHub</h2><p>右击鼠标，点击</p>
+<p><img src="C:%5CUsers%5Cuser%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200718105505042.png" alt="image-20200718105505042"></p>
+<p>在终端输入，生成本地SSH</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>查看本地的ssh，复制并绑定至GitHub</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub &#x2F;&#x2F;查看SSH</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-2-1/ssh.png" alt="img"></p>
+<p>我们的GitHub中打开我们配置页面。</p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-2-1/githubssh.png" alt="img"></p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-2-1/ssh2.png" alt="img"></p>
+<p><img src="https://qgt-style.oss-cn-hangzhou.aliyuncs.com/newcoursep4/g1/g1-2-1/ssh4.png" alt="img"></p>
+<h2 id="本地安装node-js"><a href="#本地安装node-js" class="headerlink" title="本地安装node.js"></a>本地安装node.js</h2><p>官方下载地址： <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></p>
+<p>检查是否安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="本地安装Hexo"><a href="#本地安装Hexo" class="headerlink" title="本地安装Hexo"></a>本地安装Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="第一次发布博客"><a href="#第一次发布博客" class="headerlink" title="第一次发布博客"></a>第一次发布博客</h2><p>进入你要放博客的文件，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd e:</span><br></pre></td></tr></table></figure>
+
+<p>创建我们的博客文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>进入文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+
+<p>安装发布工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>修改配置文件</p>
+<p>打开你的blog文件夹，找到_config.yml 这个文件夹，输入配置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">  type: git</span><br><span class="line"></span><br><span class="line">  repository: 你的GitHub仓库地址</span><br><span class="line"></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>注：修改该文件我用的是Hbuilder X，可以将整个博客文件都放进去。<strong>冒号后面有空格。</strong></p>
+<p>Hexo 提交</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo generate  &#x2F;&#x2F; hexo g 简写也可 生成静态文件</span><br><span class="line">hexo deploy  &#x2F;&#x2F;hexo d 简写也可 部署到 github</span><br></pre></td></tr></table></figure>
+
+<p>访问你GitHub仓库地址，例如：<code>https://yi4648.github.io/</code></p>
+<p><img src="C:%5CUsers%5Cuser%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200718112409239.png" alt="image-20200718112409239"></p>
+<p>也可访问你的Github 仓库。例如：<a href="https://github.com/yi4648/yi4648.github.io/" target="_blank" rel="noopener">https://github.com/yi4648/yi4648.github.io/</a></p>
+<p><img src="C:%5CUsers%5Cuser%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200718113648046.png" alt="image-20200718113648046"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/18/%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E5%9C%A8GitHub%E4%B8%8A%E9%83%A8%E7%BD%B2%20%E5%8D%9A%E5%AE%A2/" data-id="ckcr3sdhl0002q8dohr8fahm5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-001java面向对象" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/18/001java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="article-date">
@@ -149,7 +245,7 @@ return a.getRollNo() - b.getRollNo(); </code></pre><p>  }<br>}); </p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/18/001java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" data-id="ckcqyhw0200004cdohzdzaz9q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/18/001java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" data-id="ckcr3sdgx0000q8doety5fwtx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -198,7 +294,7 @@ return a.getRollNo() - b.getRollNo(); </code></pre><p>  }<br>}); </p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/18/hello-world/" data-id="ckcqyhw0a00014cdo2kg9dfdv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/18/hello-world/" data-id="ckcr3sdhe0001q8do93at84fk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -237,6 +333,10 @@ return a.getRollNo() - b.getRollNo(); </code></pre><p>  }<br>}); </p>
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/18/%E6%9C%AC%E5%9C%B0%E7%94%B5%E8%84%91%E5%9C%A8GitHub%E4%B8%8A%E9%83%A8%E7%BD%B2%20%E5%8D%9A%E5%AE%A2/">本地电脑在GitHub上部署 博客</a>
+          </li>
         
           <li>
             <a href="/2020/07/18/001java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">001java网络编程</a>
