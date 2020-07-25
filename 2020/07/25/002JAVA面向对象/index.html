@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>002JAVA面向对象 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="UML：统一建模语言  面向对象的基本思想之一是封装实现细节并且公开接口。在java语言中采用了访问控制修饰符来  控制类，以及类的方法和变量的访问权限，从而达到隐藏实现细节值暴露接口的能力。  访问控制修饰符：公开级别：用 public 修饰，对外公开   。受保护级别：用 protected 修饰，向子类及同一个包中的类公开。默认级别：没有访问修饰符，向同一个包中的类公开。私有级别：用 pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="002JAVA面向对象">
+<meta property="og:url" content="http://yoursite.com/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="UML：统一建模语言  面向对象的基本思想之一是封装实现细节并且公开接口。在java语言中采用了访问控制修饰符来  控制类，以及类的方法和变量的访问权限，从而达到隐藏实现细节值暴露接口的能力。  访问控制修饰符：公开级别：用 public 修饰，对外公开   。受保护级别：用 protected 修饰，向子类及同一个包中的类公开。默认级别：没有访问修饰符，向同一个包中的类公开。私有级别：用 pr">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-25T03:08:57.747Z">
+<meta property="article:modified_time" content="2020-07-25T03:40:32.881Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-002JAVA面向对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time datetime="2020-07-25T03:08:57.747Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      002JAVA面向对象
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>UML：统一建模语言</p>
+</li>
+<li><p>面向对象的基本思想之一是封装实现细节并且公开接口。在java语言中采用了访问控制修饰符来  控制类，以及类的方法和变量的访问权限，从而达到隐藏实现细节值暴露接口的能力。</p>
+</li>
+<li><p>访问控制修饰符：公开级别：用 public 修饰，对外公开   。受保护级别：用 protected 修饰，向子类及同一个包中的类公开。默认级别：没有访问修饰符，向同一个包中的类公开。私有级别：用 private 修饰，只有类本身可以访问，不对外公开</p>
+</li>
+<li><p>封装：把对象的属性隐藏起来，只能通过公开的方法来得到或者设置属性值，默认getter，setter方法。</p>
+</li>
+<li><p>方法内的变量不能使用修饰符，方法内不能新建方法。</p>
+</li>
+<li><p>静态常量：特点：我们强调过常量的特点是不需要实例化，在 Java 当中实际上是创建了一个全局唯一的内存空间并且分配给了这个变量。所以常量的值只会随 Java 的销毁才会被销毁，这样也就方便我们存储一些数据到内存中，否则会随着对象的销毁被销毁掉的。使用场景：常用的字符串值，例如：<code>public static final String USER_KEY = &quot;123456&quot;</code> ，final：USER_KEY在后续操作不可更改。需要在内存做还缓存的值。例如：<code>public static List&lt;School&gt; SCHOOLS = new ArrayList&lt;&gt;();</code></p>
+</li>
+<li><p>继承<strong>extends</strong>：方法覆盖。调用父类的方法:super，构造函数里的super方法必写在第一行。子类运用 super 调用父类一般会发生在父类有一些通用的逻辑可以被执行。随着我们后面项目的深入会逐渐理解这句话的概念。当父类只有一个有参数的构造函数的时候，子类也必须要具备这个构造函数，或者调用super方法来实现新的构造函数。注：无参构造函数是默认的，所以子类没有要求，但其是也是有的,子类的无参构造函数和super()都是默认的，可省略。</p>
+</li>
+<li><p>接口<strong>interface</strong>：我们定义接口的名称遵循 <code>XxxService。</code>问：例如我定义了一个接口，但是我在继承这个接口的类中还要写接口的实现方法，那我不如直接就在这个类中写实现方法岂不是更便捷，还省去了定义接口？答：1.接口是规范、标准，是大家都知道这个是做什么的，但是不用知道具体怎么做，就像你知道麦当劳买汉堡，你会吃就行啦，不需要知道汉堡怎么做出来。2.接口可以反复调用，拥有良好的扩展性。就像门口开了一家新的麦当劳，你就大致知道他卖啥，如果需要详细知道，才进去看一下就行。3.接口可以减少代码的耦合，降低沟通成本。</p>
+</li>
+<li><p>接口实现类<strong>implements</strong>：实现类的命名规则是<code>XxxServiceImpl</code>。规则：接口定义的方法在实现类里必须要全部实现了，而且方法签名要一模一样（同样的方法名称、方法参数、方法返回值）&lt;由于接口定义的方法都是 <code>public</code> 的，所以实现类的方法控制修饰符也必须是 <code>public</code>。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import com.youkeda.service.RoleService;</span><br><span class="line">import com.youkeda.service.impl.RoleServiceImpl;</span><br><span class="line">RoleService roleService &#x3D; new RoleServiceImpl();</span><br></pre></td></tr></table></figure>
+
+<ol start="11">
+<li><p>java常用接口：Map存储这种键值对的数据，也是一种结合数据：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;<span class="comment">// key value 得是 Java 类型</span></span><br><span class="line">Map&lt;key,value&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">map.put(<span class="number">1</span>,<span class="string">"Monday"</span>);</span><br><span class="line">String weekText = map.get(<span class="number">3</span>);</span><br><span class="line"><span class="keyword">int</span> size = map.size();</span><br><span class="line">Map的遍历：遍历字符串</span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer,String&gt; entry : map.entrySet())&#123; </span><br><span class="line">   System.out.println(<span class="string">"Key = "</span> + entry.getKey() + </span><br><span class="line">                  <span class="string">", Value = "</span> + entry.getValue());</span><br><span class="line"> &#125;</span><br><span class="line"><span class="keyword">for</span>(Integer key:  map.keySet())&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>List</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List支持同一类型的集合存储：</span><br><span class="line">List&lt;String&gt; strings &#x3D; new ArrayList&lt;&gt;();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行错误 的抛出，捕获，。例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> java.lang.NullPointerException</span><br><span class="line">    at ExceptionTest2.getStrLength(ExceptionTest2.java:<span class="number">17</span>)</span><br><span class="line">    at ExceptionTest2.main(ExceptionTest2.java:<span class="number">8</span>。</span><br></pre></td></tr></table></figure>
+
+<p>这个错误就比较复杂啦，我经常遇到的错误一般是这样的。为什么复杂呢？因为代码必须运行后，才会出现。我们会把这种运行时出现的错误称为异常，因为是运行时出现的错误，所以异常也是可以被我们处理的，这个处理行为就叫捕获，这个词很形象：某个bug的出现抛出了异常，需要我们去捕获它，如果不捕获，程序就会坏了。抛出异常</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">throws</span> Exception。 <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"姓名不能为空"</span>);</span><br><span class="line"> 	<span class="keyword">try</span> &#123;</span><br><span class="line">   	 <span class="keyword">int</span> len = getStrLength(<span class="keyword">null</span>);</span><br><span class="line">   	 &#125; <span class="keyword">catch</span> (NullPointerException e) &#123;</span><br><span class="line">   	 <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">   	 &#125;<span class="keyword">finally</span>&#123;      关门    &#125;</span><br><span class="line">   	 <span class="comment">//自定义异常</span></span><br><span class="line">     <span class="keyword">package</span> com.youkeda.exception;</span><br><span class="line">     <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ParamNullException</span> <span class="keyword">extends</span> <span class="title">Exception</span> </span>&#123;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="title">ParamNullException</span><span class="params">()</span> </span>&#123;</span><br><span class="line">     </span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内部类：外部类调用实例内部类需要先实例化  。静态内部类可以直接被调用，需要实例化，不需要线实例化外部类。需要导内部包。局部内部类：方法内部的类。</p>
+</li>
+<li><p>匿名类：使用比较频繁，本质上是一个局部内部类。不同的是匿名类只用于类的实例化，而不是声明。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class ATest &#123;  </span><br><span class="line">public static void main(String[] args)&#123;    </span><br><span class="line">  A a &#x3D; new A()&#123;      </span><br><span class="line">    public void method()&#123;        </span><br><span class="line">      System.out.println(&quot;执行内部类&quot;);      </span><br><span class="line">      &#125;   </span><br><span class="line">    &#125;;    </span><br><span class="line">    a.method();  &#125;&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>抽象类abstract：首先是一个父类</p>
+</li>
+<li><p><strong>实例化的前提是构造函数。</strong></p>
+</li>
+<li><p>List与数组的转换  Arrays：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line">数组转化为列表</span><br><span class="line">List&lt;Integer&gt; lists = Arrays.asList(<span class="string">"小王"</span>,<span class="string">"小明"</span>,<span class="string">"小李"</span>);</span><br><span class="line">列表转化成字符串</span><br><span class="line">String string = String.join(<span class="string">","</span>, list);</span><br><span class="line">列表长度，集e<span class="string">'t合求长度.size(),添加add(),获取get()</span></span><br><span class="line"><span class="string">int size = list.size();String string = lists.get(1),lists.add();</span></span><br><span class="line"><span class="string">列表转化为数组</span></span><br><span class="line"><span class="string">List&lt;Integer&gt; al = new ArrayList&lt;Integer&gt;();</span></span><br><span class="line"><span class="string">Integer[] arr = al.toArray(new Integer[]&#123;&#125;)</span></span><br><span class="line"><span class="string">字符串转化为数组</span></span><br><span class="line"><span class="string">String str = "Rahul,Utkarsh,Shubham,Neelam";</span></span><br><span class="line"><span class="string">String[] array = str.split(",");</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>排序：数组Arrays.sort(intArr内部只有一种类型的数据，;集合Collections.sort()<br>数组自定义排序</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> Arrays.sort(intArr, <span class="keyword">new</span> Comparator&lt;Integer&gt;()&#123;           </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Integer o1, Integer o2)</span></span>&#123;        </span><br><span class="line">  <span class="comment">// 判断 o2&gt;o1，执行降序排序               </span></span><br><span class="line"> <span class="keyword">return</span> o2-o1;            </span><br><span class="line"> &#125;        &#125;);</span><br><span class="line">集合的排序</span><br><span class="line"> <span class="comment">// 实现升序排序</span></span><br><span class="line">Collections.sort(ar, <span class="keyword">new</span> Comparator&lt;Student&gt;()&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Student a, Student b)</span> </span>&#123; </span><br><span class="line">    <span class="comment">// 第一个参数的学号 &gt; 第二个参数的学号</span></span><br><span class="line">    <span class="keyword">return</span> a.getRollNo() - b.getRollNo(); </span><br><span class="line">  &#125; </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>问：集合为什么不能直接用println直接输出？原因：集合里面含有不同的数据类型，解决方法：如果需要输出内部数据，需要修改toString()方法。因为println输出是默认调用toString()方法，只能输出同一类型的，所以toString()方法需要重写。</p>
+</li>
+<li><p>集合的操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 删除第4条记录list.remove(3);&#x2F;&#x2F; 合并 list2 到 list1 集合中 list1.addAll(list2);&#x2F;&#x2F;截取 List&lt;String&gt; arrlist2 &#x3D; list.subList(2, 4);</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<ol start="27">
+<li>静态方法调用非静态方法需要实例化</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" data-id="ckd142fe700029cdoctnj5x24" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          001java语言入门
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/25/003java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">003java网络编程</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/25/005GitHub%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">005GitHub的使用说明</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">006数据结构</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/">001java语言入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">002JAVA面向对象</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/003java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">003java网络编程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

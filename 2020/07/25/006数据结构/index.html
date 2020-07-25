@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>006数据结构 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="冒泡排序1234567891011121314public static void bubbleSort(int[] array)&amp;#123;    &#x2F;&#x2F;1.每次循环，都能冒泡出剩余元素中最大的元素，因此需要循环array.length次	for(int i&#x3D;0;i&lt;array.length;i++)&amp;#123;        &#x2F;&#x2F;2.每次遍历，从0遍历到array.length-iarra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="006数据结构">
+<meta property="og:url" content="http://yoursite.com/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="冒泡排序1234567891011121314public static void bubbleSort(int[] array)&amp;#123;    &#x2F;&#x2F;1.每次循环，都能冒泡出剩余元素中最大的元素，因此需要循环array.length次	for(int i&#x3D;0;i&lt;array.length;i++)&amp;#123;        &#x2F;&#x2F;2.每次遍历，从0遍历到array.length-iarra">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-25T03:08:57.762Z">
+<meta property="article:modified_time" content="2020-07-18T12:48:24.918Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-006数据结构" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="article-date">
+  <time datetime="2020-07-25T03:08:57.762Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      006数据结构
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort</span><span class="params">(<span class="keyword">int</span>[] array)</span></span>&#123;</span><br><span class="line">    <span class="comment">//1.每次循环，都能冒泡出剩余元素中最大的元素，因此需要循环array.length次</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">        <span class="comment">//2.每次遍历，从0遍历到array.length-iarray.length-i-1中元素，之后的元素都是最大的了。</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;array.length-i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">            <span class="comment">//交换元素</span></span><br><span class="line">			<span class="keyword">if</span>(array[j]&gt;array[j+<span class="number">1</span>])&#123;</span><br><span class="line">				<span class="keyword">int</span> tmp = array[j];</span><br><span class="line">				array[j]=array[j+<span class="number">1</span>];</span><br><span class="line">				arrray[j+<span class="number">1</span>]=array[j];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectSort</span><span class="params">(<span class="keyword">int</span>[] array)</span></span>&#123;</span><br><span class="line">    <span class="comment">//每次循环都能选择最大的值，所以需要循环array.length</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">		<span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> max = array[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">//每次遍历，array.length-i之后的值，都是最大的</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;array.length-i;j++)&#123;</span><br><span class="line">            <span class="comment">//找到最大值的索引和值</span></span><br><span class="line">			<span class="keyword">if</span>(array[j]&gt;max)&#123;</span><br><span class="line">				index = j;</span><br><span class="line">				max = array[j];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">        <span class="comment">//交换最大值和你遍历的最后一位数</span></span><br><span class="line">		array[index]=array[array.length-i-<span class="number">1</span>];</span><br><span class="line">		array[array.length-i-<span class="number">1</span>]= max;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertSort</span><span class="params">(<span class="keyword">int</span>[] array)</span></span>&#123;</span><br><span class="line">    <span class="comment">//从倒数第二位开始，遍历array.length-1次</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=array.length-<span class="number">2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">        <span class="comment">//储存当时抽离的元素</span></span><br><span class="line">		<span class="keyword">int</span> value = array[i];</span><br><span class="line">        <span class="comment">//从抽离的元素右边开始遍历</span></span><br><span class="line">		<span class="keyword">int</span> j=i+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(j&lt;array.length</span><br><span class="line">              <span class="comment">//如果元素小于value，则前移</span></span><br><span class="line">			<span class="keyword">if</span>(array[j]&lt;value)&#123;</span><br><span class="line">				array[j-<span class="number">1</span>]=array[j];</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">//如果元素大于value，则插入，然后出循环</span></span><br><span class="line">				array[j-<span class="number">1</span>]=value;</span><br><span class="line">             	 <span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			j++;</span><br><span class="line">		&#125;</span><br><span class="line">         <span class="comment">//处理到达尾部的情况</span></span><br><span class="line">		<span class="keyword">if</span>(j==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">			array[j]=value;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入排序的进阶-二分插入排序"><a href="#插入排序的进阶-二分插入排序" class="headerlink" title="插入排序的进阶-二分插入排序"></a>插入排序的进阶-二分插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二分法查找应该插入索引的位置</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">searchIndex</span><span class="params">(<span class="keyword">int</span>[] array,<span class="keyword">int</span> left,<span class="keyword">int</span> right,<span class="keyword">int</span> aim)</span></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">		<span class="keyword">int</span> middle = (left+right)/<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">int</span> middlevalue = array[middle];</span><br><span class="line">		<span class="keyword">if</span>(middlevalue&lt;aim)&#123;</span><br><span class="line">			left = middle +<span class="number">1</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			right = middle-<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="comment">//1.如果最终元素仍能大于目标元素，则将索引位置往左边移</span></span><br><span class="line">    <span class="keyword">if</span>(array[left]&lt;aim)&#123;</span><br><span class="line">    	<span class="keyword">return</span> left-<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//插入排序的进阶</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertSort</span><span class="params">(<span class="keyword">int</span>[] array)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=array.length-<span class="number">2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">		<span class="keyword">int</span> value = array[i];</span><br><span class="line">		<span class="keyword">int</span> index = searchIndex(array,i+<span class="number">1</span>,array.length,value);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> j=i+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(j&lt;index)&#123;</span><br><span class="line">			array[j-<span class="number">1</span>] = array[j];</span><br><span class="line">			j++;</span><br><span class="line">		&#125;</span><br><span class="line">		array[j-<span class="number">1</span>] = value;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 归并排序</span></span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] mergeSort(<span class="keyword">int</span>[] array) &#123;</span><br><span class="line">   <span class="comment">// 为了方便查看结果，我们将每个数组进行打印</span></span><br><span class="line">   <span class="keyword">if</span> (array.length == <span class="number">1</span>) &#123;</span><br><span class="line">     <span class="keyword">return</span> array;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">int</span> middle = array.length / <span class="number">2</span>;</span><br><span class="line">   <span class="comment">// 处理 0 到 middle 左侧数组部分</span></span><br><span class="line">   <span class="keyword">int</span>[] left = mergeSort(subArray(array, <span class="number">0</span>, middle));</span><br><span class="line">   <span class="comment">// 处理 middle 到 array.length 右侧数组部分</span></span><br><span class="line">   <span class="keyword">int</span>[] right = mergeSort(subArray(array, middle, array.length));</span><br><span class="line"></span><br><span class="line">   <span class="comment">// TODO处理合并问题</span></span><br><span class="line">   <span class="keyword">int</span> l = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">int</span> r = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">int</span> t = <span class="number">0</span>;</span><br><span class="line">   System.out.println(Arrays.toString(left) + Arrays.toString(right));</span><br><span class="line">   <span class="keyword">while</span> (l &lt; left.length &amp;&amp; r &lt; right.length) &#123;</span><br><span class="line">     <span class="keyword">if</span> (left[l] &lt; right[r]) &#123;</span><br><span class="line">       array[t] = left[l];</span><br><span class="line">       l++;</span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       array[t] = right[r];</span><br><span class="line">       r++;</span><br><span class="line">     &#125;</span><br><span class="line">     t++;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">// 如果左侧有剩余</span></span><br><span class="line">   <span class="keyword">if</span> (l &lt; left.length) &#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="keyword">int</span> i = l; i &lt; left.length; i++) &#123;</span><br><span class="line">       array[t] = left[i];</span><br><span class="line">       t++;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">// 如果右侧有剩余</span></span><br><span class="line">   <span class="keyword">if</span>(r&gt;right.length)&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> j=r;j&lt;right.length;j++)&#123;</span><br><span class="line">       array[t]=right[r];</span><br><span class="line">       t++;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> array;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 拷贝原数组的部分内容，从 left 到 right</span></span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] subArray(<span class="keyword">int</span>[] source, <span class="keyword">int</span> left, <span class="keyword">int</span> right) &#123;</span><br><span class="line">   <span class="comment">// 创建一个新数组</span></span><br><span class="line">   <span class="keyword">int</span>[] result = <span class="keyword">new</span> <span class="keyword">int</span>[right - left];</span><br><span class="line">   <span class="comment">// 依次赋值进去</span></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = left; i &lt; right; i++) &#123;</span><br><span class="line">     result[i - left] = source[i];</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> result;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" data-id="ckd142fec00069cdoeqvtdbe8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/25/005GitHub%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          005GitHub的使用说明
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">001java语言入门</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/25/005GitHub%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">005GitHub的使用说明</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">006数据结构</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/">001java语言入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">002JAVA面向对象</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/003java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">003java网络编程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>001java语言入门 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数学函数随机数产生的值是一个浮点类型的数据，并且小于1.0，大于等于0 123&#x2F;&#x2F; 得到一个随机数double value &#x3D; Math.random();System.out.println(value);  如何产生0-9之间的随机数 12345&#x2F;&#x2F; (value*10) 用小括号包围是因为先乘10得到结果在转化为整数&#x2F;&#x2F; 要不然得不到结果，这个就是数学的优先级int nValue &#x3D; (in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="001java语言入门">
+<meta property="og:url" content="http://yoursite.com/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数学函数随机数产生的值是一个浮点类型的数据，并且小于1.0，大于等于0 123&#x2F;&#x2F; 得到一个随机数double value &#x3D; Math.random();System.out.println(value);  如何产生0-9之间的随机数 12345&#x2F;&#x2F; (value*10) 用小括号包围是因为先乘10得到结果在转化为整数&#x2F;&#x2F; 要不然得不到结果，这个就是数学的优先级int nValue &#x3D; (in">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-25T03:08:57.747Z">
+<meta property="article:modified_time" content="2020-07-25T03:06:50.032Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-001java语言入门" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/" class="article-date">
+  <time datetime="2020-07-25T03:08:57.747Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      001java语言入门
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h2><h3 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h3><p>产生的值是一个浮点类型的数据，并且小于1.0，大于等于0</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 得到一个随机数</span></span><br><span class="line"><span class="keyword">double</span> value = Math.random();</span><br><span class="line">System.out.println(value);</span><br></pre></td></tr></table></figure>
+
+<p>如何产生0-9之间的随机数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// (value*10) 用小括号包围是因为先乘10得到结果在转化为整数</span></span><br><span class="line"><span class="comment">// 要不然得不到结果，这个就是数学的优先级</span></span><br><span class="line"><span class="keyword">int</span> nValue = (<span class="keyword">int</span>) (Math.random()*<span class="number">10</span>);</span><br><span class="line"><span class="comment">//上面的出来的数字有bug</span></span><br><span class="line"><span class="keyword">int</span> nValue = (<span class="keyword">int</span>) ((Math.random() * <span class="number">9</span> + <span class="number">1</span>) * <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明一个 int 数组的变量，数组大小为6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化变量</span></span><br><span class="line"><span class="keyword">int</span>[] numbers = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line">numbers[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">numbers[<span class="number">1</span>] = <span class="number">3</span>;</span><br><span class="line">numbers[<span class="number">2</span>] = <span class="number">5</span>;</span><br><span class="line">numbers[<span class="number">3</span>] = <span class="number">7</span>;</span><br><span class="line">numbers[<span class="number">4</span>] = <span class="number">9</span>;</span><br><span class="line">numbers[<span class="number">5</span>] = <span class="number">11</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 得到数组中第三个数字</span></span><br><span class="line"><span class="keyword">int</span> num = numbers[<span class="number">2</span>];</span><br><span class="line"><span class="comment">//得到数组的长度</span></span><br><span class="line"><span class="keyword">int</span> size = numbers.length;</span><br></pre></td></tr></table></figure>
+
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
+<li>取字符串长度</li>
+<li>取出字符串中的一个字符<code>charAt</code></li>
+<li>去掉左右多余的空格<code>trim</code></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  String message = <span class="string">"今天我在学习 Java 字符串"</span>;</span><br><span class="line">  <span class="comment">// 调用字符串的长度方法得到长度</span></span><br><span class="line">  <span class="keyword">int</span> size = message.length();</span><br><span class="line">    </span><br><span class="line">  <span class="comment">// 取出第一个字</span></span><br><span class="line">  <span class="keyword">char</span> str = message.charAt(<span class="number">0</span>);</span><br><span class="line">  System.out.println(str);</span><br><span class="line">  <span class="comment">// 取出第二个字</span></span><br><span class="line">  str = message.charAt(<span class="number">1</span>);</span><br><span class="line">  System.out.println(str);</span><br><span class="line">    </span><br><span class="line">  <span class="comment">// 处理一下去空格</span></span><br><span class="line">  String newMessage = message.trim();  </span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>查找字符串 <code>indexOf</code>:查找第一个匹配到的坐标索引值，如果返回值是-1说明不匹配，如果返回值！ = -1那么说明匹配到了</li>
+<li>字符串的拼接 <code>substring</code> </li>
+<li>字符串开始和结束内容判断</li>
+<li>字符串替换 <code>replaceAll</code></li>
+<li>字符串分割<code>split</code></li>
+<li>大小写转化 <code>toUpperCase/toLowerCase</code></li>
+<li>字符串比较<code>equals</code></li>
+<li>数字和字符串转化<code>Integer.parseInt</code></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String str = <span class="string">"Java是一种广泛使用的计算机编程语言，于1995年5月以Java的名称正式发布。"</span>;</span><br><span class="line">  <span class="comment">//第一个</span></span><br><span class="line">  <span class="keyword">int</span> index = str.indexOf(<span class="string">"Java"</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(index!=-<span class="number">1</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">"匹配到了Java，索引位置是"</span>+index);</span><br><span class="line">    <span class="comment">//substring</span></span><br><span class="line">    String newStr = str.substring(index+<span class="number">4</span>);</span><br><span class="line">    <span class="comment">// 结束索引应该是 index+4+3</span></span><br><span class="line">    String newStr = str.substring(index+<span class="number">4</span>,index+<span class="number">7</span>);</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"没有匹配到了Java"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//第二个</span></span><br><span class="line">  index = str.indexOf(<span class="string">"Java"</span>, index + <span class="number">4</span>);</span><br><span class="line"></span><br><span class="line">  System.out.println(<span class="string">"第二次匹配到了Java，索引位置是"</span> + index);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//endsWith</span></span><br><span class="line">    String fileName = <span class="string">"报告.doc"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(fileName.endsWith(<span class="string">".doc"</span>))&#123;</span><br><span class="line">      System.out.println(<span class="string">"是word文档"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//startsWith</span></span><br><span class="line">    String url = <span class="string">"https://www.youkeda.com"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(url.startsWith(<span class="string">"https"</span>))&#123;</span><br><span class="line">      System.out.println(<span class="string">"网址是安全的"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">   <span class="comment">//替换和删除字符串</span></span><br><span class="line">    String fileName = <span class="string">"报告.doc"</span>;</span><br><span class="line"></span><br><span class="line">   String name = fileName.replaceAll(<span class="string">".doc"</span>,<span class="string">""</span>);</span><br><span class="line"></span><br><span class="line">   System.out.println(name);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">  String text = <span class="string">"姓名|年龄|性别\n张三|20|男\n李四|18|男\n小花|18|女"</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 使用 split 进行换行符的分割，得到一个新的数组对象</span></span><br><span class="line">  String[] data = text.split(<span class="string">"\n"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 因为第一行是标题不是数据，所以我们需要把长度-1</span></span><br><span class="line">  <span class="comment">// (注意要使用小括号包围，因为要先计算长度再组合字符串)</span></span><br><span class="line">  System.out.println(<span class="string">"共有:"</span>+(data.length-<span class="number">1</span>)+<span class="string">" 条记录"</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">   String text = <span class="string">"ZhanSan"</span>;</span><br><span class="line">   <span class="comment">// 把拼音全部转化为大写字母</span></span><br><span class="line">   String enName = text.toUpperCase();</span><br><span class="line">   System.out.println(enName);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    String text = <span class="string">"字符串"</span>;</span><br><span class="line">    <span class="comment">// 使用 equals 方法判断是否相同</span></span><br><span class="line">    <span class="keyword">if</span> (text.equals(<span class="string">"字符串"</span>)) &#123;</span><br><span class="line">      System.out.println(<span class="string">"equals 方法字符串相等"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 前后顺序无所谓,下面代码是一样的</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="string">"字符串"</span>.equals(text)) &#123;</span><br><span class="line">      System.out.println(<span class="string">"equals 方法字符串相等"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String text = <span class="string">"123"</span>;</span><br><span class="line">  <span class="comment">// 转化字符串为数字</span></span><br><span class="line">  <span class="keyword">int</span> a = Integer.parseInt(text);</span><br><span class="line">  System.out.println(a);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 转化字符串为数字</span></span><br><span class="line">  a = Integer.parseInt(<span class="string">"100"</span>);</span><br><span class="line">  System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数字转化为字符串"><a href="#数字转化为字符串" class="headerlink" title="数字转化为字符串"></a>数字转化为字符串</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">100</span>;</span><br><span class="line">    <span class="comment">//使用空字符串相加数字，会自动变成字符串类型</span></span><br><span class="line">    String str = <span class="string">""</span>+a;</span><br><span class="line">    System.out.println(str);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//使用valueOf强制把数字转化为字符串</span></span><br><span class="line">    String str = String.valueOf(a);</span><br><span class="line">    System.out.println(str);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="时间-日期类-LocalDate"><a href="#时间-日期类-LocalDate" class="headerlink" title="时间 日期类 LocalDate"></a>时间 日期类 LocalDate</h2><ol>
+<li>获取当前完整时间 <code>LocalDate.now()</code></li>
+<li>日期时间和字符串的转换  DateTimeFormatter</li>
+<li>获取日期时间具体的值 </li>
+<li>字符串转化为日期时间<code>LocalDate.parse(）</code></li>
+<li>两个日期时间的判断 <code>isBefore()/isAfter()</code></li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br><span class="line"><span class="keyword">import</span> java.time.format.DateTimeFormatter;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 得到当前的完整时间</span></span><br><span class="line">    LocalDate now = LocalDate.now();</span><br><span class="line">    <span class="comment">// 打印出时间</span></span><br><span class="line">    System.out.println(now.toString());</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 得到当前时间所在年</span></span><br><span class="line">    <span class="keyword">int</span> year = time.getYear();</span><br><span class="line">    System.out.println(<span class="string">"当前年份 "</span> + year);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 得到当前时间所在月</span></span><br><span class="line">    <span class="keyword">int</span> month = time.getMonth().getValue();</span><br><span class="line">    System.out.println(<span class="string">"当前月份 "</span> + month);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 得到当前时间在这个月中的天数</span></span><br><span class="line">    <span class="keyword">int</span> day = time.getDayOfMonth();</span><br><span class="line">    System.out.println(<span class="string">"当前日 "</span> + day);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 得到当前时间所在星期数</span></span><br><span class="line">    <span class="keyword">int</span> dayOfWeek = time.getDayOfWeek().getValue();</span><br><span class="line">    System.out.println(<span class="string">"当前星期 "</span> + dayOfWeek);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">      </span><br><span class="line">    <span class="comment">// 创建一个格式化方式</span></span><br><span class="line">    DateTimeFormatter df = DateTimeFormatter.ofPattern(<span class="string">"yyyy年MM月dd"</span>);</span><br><span class="line">    <span class="comment">// 执行时间的格式化处理，得到期望格式的时间字符串</span></span><br><span class="line">    String timeStr = df.format(time);</span><br><span class="line">    <span class="comment">// 打印时间</span></span><br><span class="line">    System.out.println(timeStr);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*给定标准日期*/</span></span><br><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateTest8</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义一个时间字符串，日期是2019年1月1日</span></span><br><span class="line">    String date = <span class="string">"2019-01-01"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 把字符串转化位 LocalDate 对象，并得到字符串匹配的日期</span></span><br><span class="line">    LocalDate date2 = LocalDate.parse(date);</span><br><span class="line">    <span class="comment">// 打印出日期</span></span><br><span class="line">    System.out.println(date2.toString());</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*给定非标准日期*/</span></span><br><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br><span class="line"><span class="keyword">import</span> java.time.format.DateTimeFormatter;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateTest81</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义一个时间字符串，日期是2019年1月1日</span></span><br><span class="line">    String date = <span class="string">"2019/01/01"</span>;</span><br><span class="line"></span><br><span class="line">    DateTimeFormatter df = DateTimeFormatter.ofPattern(<span class="string">"yyyy/MM/dd"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 把字符串转化位 LocalDate 对象，并得到字符串匹配的日期</span></span><br><span class="line">    LocalDate date2 = LocalDate.parse(date,df);</span><br><span class="line">    <span class="comment">// 打印出日期</span></span><br><span class="line">    System.out.println(date2.toString());</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateTest11</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    LocalDate now = LocalDate.now();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 可以对两个 LocalDate 进行比较，</span></span><br><span class="line">    <span class="comment">// 可以判断一个日期是否在另一个日期之前或之后，</span></span><br><span class="line">    <span class="comment">// 或者判断两个日期是否是同年同月同日。</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">boolean</span> isBefore = now.minusDays(<span class="number">1</span>).isBefore(LocalDate.now());</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"是否在当天之前："</span> + isBefore);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">boolean</span> isAfter = now.plusDays(<span class="number">1</span>).isAfter(LocalDate.now());</span><br><span class="line">    System.out.println(<span class="string">"是否在当天之后："</span> + isAfter);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断是否是当天</span></span><br><span class="line">    <span class="keyword">boolean</span> sameDate = now.isEqual(LocalDate.now());</span><br><span class="line">    System.out.println(<span class="string">"是否在当天："</span> + sameDate);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="动态数组-ArrayList-类"><a href="#动态数组-ArrayList-类" class="headerlink" title="动态数组 ArrayList 类"></a>动态数组 ArrayList 类</h2><ul>
+<li><code>get/size</code>方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayListTest1</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建一个 ArrayList 存储字符串集合</span></span><br><span class="line">    ArrayList&lt;String&gt; strs = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 添加数据到 ArrayList 实例里</span></span><br><span class="line">    strs.add(<span class="string">"张三"</span>);</span><br><span class="line">    strs.add(<span class="string">"李四"</span>);</span><br><span class="line">      </span><br><span class="line">   <span class="comment">// 获取集合的长度</span></span><br><span class="line">    <span class="keyword">int</span> size = strs.size();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用 for 循环迭代每一条记录</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;size;i++)&#123;</span><br><span class="line">       <span class="comment">// 根据索引获取值，值的类型是 String</span></span><br><span class="line">       String str = strs.get(i);</span><br><span class="line">       System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/" data-id="ckd142fdk00009cdog8wz7czk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          006数据结构
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">002JAVA面向对象</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/25/005GitHub%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">005GitHub的使用说明</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/006%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">006数据结构</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/001java%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8/">001java语言入门</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/002JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">002JAVA面向对象</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/003java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">003java网络编程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
